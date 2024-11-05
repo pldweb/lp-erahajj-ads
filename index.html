@@ -1,890 +1,728 @@
 <!DOCTYPE html>
-<html lang="en" style="--viewport-height: 100svh; --background-height: 100lvh;">
+<html lang="id" style="--viewport-height: 100vh; --background-height: 100vh;">
 <head>
-    <!-- Required meta tags -->
     <title>Erahajj - Sistem Manajemen Travel Umrah & Haji Terlengkap dan Terintegrasi No.1 di Dunia!</title>
-
     <meta charset='UTF-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <meta name='format-detection' content='telephone=no'/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="csrf-token" content="arImaSENMFW2KIMR74Oxq6KwDxvhmWdzqf6e5vtb">
     <meta name="base-url" content="https://ads.erahajj.co.id">
     <meta name="base-domain" content="ads.erahajj.co.id">
-    <meta name="author" content="Muhammad Rivaldi Fanani">
-    <meta name="description" content="Aksana adalah sistem manajemen wedding organizer terintegrasi &amp; terlengkap nomor #1 di Indonesia yang dikembangkan untuk mempermudah pengelolaan bisnis Anda">
-    <meta name="keywords" content="sistem wedding organizer, aplikasi wedding organizer, software wedding organizer">
 
-    <meta itemprop="name" content="Aksana">
-    <meta itemprop="description" content="Aksana adalah sistem manajemen wedding organizer terintegrasi &amp; terlengkap nomor #1 di Indonesia yang dikembangkan untuk mempermudah pengelolaan bisnis Anda">
-    <meta itemprop="image" content="https://a96abf882c7f2802b.s3-jak01.storageraya.com/img/aksana/og-image.jpg">
-
-    <meta name="twitter:title" content="Aksana - Sistem Wedding Organizer Terintegrasi &amp; Terlengkap Nomor #1 di Indonesia" />
-    <meta name="twitter:description" content="Aksana adalah sistem manajemen wedding organizer terintegrasi &amp; terlengkap nomor #1 di Indonesia yang dikembangkan untuk mempermudah pengelolaan bisnis Anda" />
-    <meta name="twitter:url" content="https://ads.erahajj.co.id" />
-    <meta name="twitter:image" content="https://a96abf882c7f2802b.s3-jak01.storageraya.com/img/aksana/og-image.jpg" />
-
-    <meta property="og:title" content="Aksana - Sistem Wedding Organizer Terintegrasi &amp; Terlengkap Nomor #1 di Indonesia" />
-    <meta property="og:url" content="https://ads.erahajj.co.id" />
-    <meta property="og:description" content="Aksana adalah sistem manajemen wedding organizer terintegrasi &amp; terlengkap nomor #1 di Indonesia yang dikembangkan untuk mempermudah pengelolaan bisnis Anda" />
-    <meta property="og:locale" content="id_ID" />
-    <meta property="og:site_name" content="Aksana" />
-
-    <meta property="og:image" itemprop='image' content="https://a96abf882c7f2802b.s3-jak01.storageraya.com/img/aksana/og-image.jpg" />
-    <meta property="og:image:url" content="https://a96abf882c7f2802b.s3-jak01.storageraya.com/img/aksana/og-image.jpg" />
-    <meta property="og:image:secure_url" content="https://a96abf882c7f2802b.s3-jak01.storageraya.com/img/aksana/og-image.jpg" />
-    <meta property="og:image:type" content="image/jpeg" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Aksana" />
-    <meta property="og:updated_time" content="2024-04-05 00:00:00" />
-    <meta property="og:type" content="website" />
-
-    <!-- Swiper & Fontawesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.4/swiper-bundle.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 
     <!-- Font -->
-    <link href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-     <!-- Bootstrap -->
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
-     <!-- Favicon -->
+    <!-- Favicon -->
     <link rel="canonical" href="https://ads.erahajj.co.id" />
     <link rel='icon' href="https://a96abf882c7f2802b.s3-jak01.storageraya.com/img/favicon-aksana.png" type='image/x-icon'>
     <link href="https://a96abf882c7f2802b.s3-jak01.storageraya.com/img/favicon-aksana.png" rel="apple-touch-icon">
-    
+
     <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    
+    <link rel="stylesheet" href="./backup-assets/import.css">
+    <link rel="stylesheet" href="./style.css">
 
     <!-- Slick -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
 
+    <!-- jQuery (Pastikan ini adalah versi terbaru yang sesuai) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+    <!-- Script Bootstrap JS (pastikan dimuat setelah jQuery) -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- Script Slick JS -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
     <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-5ND43TGZ');</script>
-
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-PWMVGJB12C"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-PWMVGJB12C');
-</script>
-  
 </head>
 <body>
 
-    <!-- Google Tag Manager (noscript) -->
+    <div id="main">
+        <section id="home-section" class="active">
 
-    <div id="wrapper">
-        <div id="main">
-            <div class="inner">
-                <section id="home-section" class="active">
-
-                    <!-- Section 1 -->
-                    <div id="container04" class="container default full screen">
-                        <div class="wrapper">
-                            <div class="inner">
-                                <div id="image17" class="style17 image" data-position="center">
-                                    <span class="frame">
-                                        <img src="./images/logo-aksana.png" alt="" class="" style="box-shadow: 0rem 0.5rem 0.625rem 0rem rgba(0,0,0,0.059);">
-                                    </span>
-                                </div>
-                                <h2 id="heading" class="style12" style="opacity: 1; ">
-                                    <span class="p">Sistem Manajemen Travel Umrah & Haji Terlengkap dan Terintegrasi No.1 di Dunia!
-                                        <br>
-                                    </span>
-                                </h2>
-
+            <!-- Section 1 -->
+            <section id="section-1" class="section-padding primary-background">
+                <div class="container default full screen">
+                    <div class="wrapper">
+                        <div class="inner">
+                            <div class="style17 image mb10" data-position="center">
+                                <span class="frame">
+                                    <img class="logo" src="./images/logo-erahajj-biru.png" alt="">
+                                </span>
                             </div>
-                        </div>
-                    </div>
-                 
-                      <!-- Section 2 -->
-                      <div id="container17" class="style5 container default full screen bg-grey">
-                        <div class="wrapper">
-                            <div class="inner">
-
-                                
-                                <p id="paragraph" class="style11" style="opacity: 1; ">
-                                    <strong>Apakah masalah ini yang sedang Anda rasakan sekarang?</strong>
-                                </p>
-                                <div id="point" class="style11" style="font-size: x-large; color: var(--black-text); margin-top: 30px;">
-                                    <ul>
-                                     <li>
-                                        <span>🚫</span>
-                                        <p>Tidak bisa membedakan <strong>Profit</strong> dan <strong>Uang Titipan</strong>?</p>
-                                     </li>
-                                     <li>
-                                         <span>🚫</span>
-                                         <p>Lupa Mencatat dan <strong>Menagihkan Biaya Tambahan</strong>?</p>
-                                      </li>
-                                     <li>
-                                         <span>🚫</span>
-                                         <p>Tidak tahu apakah bisnis selama ini <strong>Untung</strong> atau <strong>Rugi</strong>?</p>
-                                      </li>
-                                     <li>
-                                         <span>🚫</span>
-                                         <p>Tidak punya <strong> Laporan Keuangan</strong> karena data terpisah-pisah?</p>
-                                      </li>
-                                    </ul> 
-                                 </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Section 2 -->
-                    <div id="container15" class="container default full screen">
-                        <div class="wrapper">
-                            <div class="inner">
-
-                                <h2 id="heading" class="style12 heading-mobile" style="opacity: 1;  color: white;">Karena sering di lapangan,<br><span class="hightlight">lupa mencatat pengeluaran?</span>
-                                </h2>
-                                <div id="point" class="style11" style="font-size: x-large; color: white;">
-                                    <ul>
-                                     <li>
-                                        <span>❌</span>
-                                        <p>Tidak sempat atau tidak ada waktu</p>
-                                     </li>
-                                     <li>
-                                         <span>❌</span>
-                                         <p>Ribet kalau harus buka laptop dan excel</p>
-                                      </li>
-                                     <li>
-                                         <span>❌</span>
-                                         <p>Tidak tahu apa yang harus dicatat</p>
-                                      </li>
-                                    </ul> 
-                                 </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Section 3 -->
-                    <div id="container17" class="container default full screen">
-                        <div class="wrapper">
-                            <div class="inner" >
-                                <h2 id="heading" class="style12" style="opacity: 1; ">
-                                Bagaimana kalau dibuat <br>
-                                <span style="color: var(--black-color); background-color: var(--primary-color);" class="hightlight">MUDAH</span> jadi <span style="color: var(--black-color); background-color: var(--primary-color);" class="hightlight">TERINTEGRASI</span> 
-                                <br>
-                                ke SEMUA DATA ?
-                                </h2>
-
-                                <ul id="buttons" class="button-style-arrow">
-                                    <li>
-                                        <a href="#" class="button n01">
-                                           
-                                            <span class="label"><i class="fa fa-arrow-down" aria-hidden="true"></i></span>
-                                        </a>
-                                    </li>
-                                </ul>
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Section 4 -->
-                    <div id="container17" class="style5 container default full screen bg-grey">
-                        <div class="wrapper">
-                            <div class="inner">
-                                <h2 id="heading" class="style12" style="opacity: 1; ">
-                                    <span class="p">Perkenalkan Sistem <span class="hightlight" style="background-color: var(--primary-color);">AKSANA</span>
-                                        <span style="color: var(--primary-color)"></span>
-                                    </span>
-                                </h2>
-                                <div id="image08" class="style18 image-mockup">
-                                    <span class="frame">
-                                        <img src="./images/mockup.png" alt="">
-                                    </span>
-                                </div>
-                                <div id="point" class="style11" style="font-size: x-large; color: #333;">
-                                   <ul>
-                                    <li>
-                                       <span>✅</span>
-                                       <p><strong>Sistem Manajemen Terintegrasi </strong>dikembangkan <strong>Khusus</strong> untuk <strong>Wedding Organizer</strong></p>
-                                    </li>
-                                    <li>
-                                        <span>✅</span>
-                                        <p>Dilengkapi <strong>Form Rincian Pesanan</strong> hingga <strong>Laba Rugi Acara
-                                        </strong></p>
-                                     </li>
-                                    <li>
-                                        <span>✅</span>
-                                        <p><strong>Multi Platform</strong>, bisa diakses melalui website maupun aplikasi mobile (android & iOS)</p>
-                                     </li>
-                                    <li>
-                                        <span>✅</span>
-                                        <p><strong>Laporan Keuangan Lengkap</strong> dan Otomatis sesuai SAK ETAP</p>
-                                     </li>
-                                   </ul> 
-                                    
-                                 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                      <!-- Section 5 -->
-                    <div id="container17" style="margin-top: 0; margin-bottom: 0;" class="container default full screen smooth bg-dark padding-50">
-                        <div class="wrapper">
-                            <div class="inner">
-                                <h2 id="heading" class="style12">
-                                    <span class="p" style="color: white;"> <span style="color: var(--primary-color);">AKSANA</span> cocok untuk Anda 
+                            <div class="text-small">
+                                <h3 class="default-text text-white font-weight-normal">
+                                    Sistem Manajemen Travel Umrah & Haji
                                     <br>
-                                    yang memiliki bisnis : 
-                                       
-                                    </span>
-                                </h2>
-                                <div class="icon-component">
-                                    <div class="row ">
-                                        <div class="col-md-3 col-sm-6 col-xs-12">
-                                            <div class="box-icon">
-                                                <div class="icon-side">
-                                                    <div class="icon-image">
-                                                        <img src="./images/check-white.png" alt="">
-                                                    </div>
-                                                <div class="icon-text">
-                                                    <div class="icon-title">Wedding Organizer</div>  
-                                                </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-3 col-sm-6 col-xs-12">
-                                            <div class="box-icon">
-                                                <div class="icon-side">
-                                                    <div class="icon-image">
-                                                        <img src="./images/check-white.png" alt="">
-                                                    </div>
-                                                <div class="icon-text">
-                                                    <div class="icon-title">Wedding Service</div>  
-                                                </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-3 col-sm-6 col-xs-12">
-                                            <div class="box-icon">
-                                                <div class="icon-side">
-                                                    <div class="icon-image">
-                                                        <img src="./images/check-white.png" alt="">
-                                                    </div>
-                                                <div class="icon-text">
-                                                    <div class="icon-title">Wedding Planner</div>  
-                                                </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-3 col-sm-6 col-xs-12">
-                                            <div class="box-icon">
-                                                <div class="icon-side">
-                                                    <div class="icon-image">
-                                                        <img src="./images/check-white.png" alt="">
-                                                    </div>
-                                                <div class="icon-text">
-                                                    <div class="icon-title">Vendor Wedding</div>  
-                                                </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </div>  
-                                </div>
-                               
+                                    Terlengkap dan Terintegrasi
+                                    <br>No.1 di Dunia!</h3>
                             </div>
-                        </div>
-                    </div>  
-
-
-                    
-                    <div id="container17" style="margin-top: 0; margin-bottom: 0;" class="container default full screen padding-50 bottom-zero">
-                        <div class="wrapper">
-                            <div class="inner">
-                                <h2 id="heading" class="style12" style="opacity: 1;  margin-bottom: 20px;">
-                                    <span class="p">Apa kata mereka yang sudah pakai Aksana 
-                                        
-                                    </span>
-                                </h2>
-
-                                <div class="arrow" style="margin-bottom: 40px;">
-                                    <img style="max-width: 40px; transform: rotate(30deg);" src="./images/arrow1.png" alt="">
-                                    <img style="max-width: 40px;" src="./images/arrow1.png" alt="">
-                                    <img style="max-width: 40px; transform: rotate(-30deg);"src="./images/arrow1.png" alt="">
-                                </div>
-
-                                <div class="mockup-component">
-                                    <div class="row">
-
-                                          <div class="wrap">
-                                            <div class="slider">
-                                                
-                                                    <div class="carousel-slide">
-                                                        <img src="./images/testi1.png" alt="">
-                                                    </div>
-                                                
-                                                    <div class="carousel-slide">
-                                                        <img src="./images/testi2.png" alt="">
-                                                    </div>
-                                                
-                                                    <div class="carousel-slide">
-                                                        <img src="./images/testi3.png" alt="">
-                                                    </div>
-                                         
-                                                    <div class="carousel-slide">
-                                                        <img src="./images/testi4.png" alt="">
-                                                    </div>
-                                                    <div class="carousel-slide">
-                                                        <img src="./images/testi5.png" alt="">
-                                                    </div>
-                                            </div>
-                                            <div class="slider" style="margin-top: 20px;">
-                                                
-                                                <div class="carousel-slide">
-                                                    <img src="./images/train2.png" alt="">
-                                                </div>
-                                                <div class="carousel-slide">
-                                                    <img src="./images/train4.png" alt="">
-                                                </div>
-                                                <div class="carousel-slide">
-                                                    <img src="./images/train5.png" alt="">
-                                                </div>
-                                                <div class="carousel-slide">
-                                                    <img src="./images/train1.png" alt="">
-                                                </div>
-                                                <div class="carousel-slide">
-                                                    <img src="./images/train3.png" alt="">
-                                                </div>
-                                        </div>
-                                          </div>
-
-                                    </div>
-                                </div>
-
-                               
+                            <div class="text-big">
+                                <h1 class="text-white font-weight-bold"><span>Mudahnya Kelola Travel Umrah & Haji</span></h1>
                             </div>
+                            <div class="harga text-white mt10">
+                                <p>Mulai dari <span class="font-weight-bold">775.000/bulan</span></p>
+                            </div>
+                            <div class="penjelasan text-white mt10 mb10 font-weight-normal font-size-20">Saatnya transformasi digital manajemen travel umrah & haji pakai Erahajj</div>
+                            <div class="penjelasan text-white mt10 mb10 font-weight-normal font-size-20">Solusi digital travel umrah & haji hanya dalam satu sistem saja!</div>
+                            
+                            <div class="gambar-banner">
+                                <img src="./images/image.png" alt="">
+                            </div>
+
+                            <ul class="buttons style4 mt10" style="margin-top: 20px">
+                                <li>
+                                    <a href="" class="button n01 btn-3 bg-white">
+                                        <span class="label">TRIAL GRATIS 14 HARI</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="buttons style4 mt10" style="margin-top: 20px">
+                                <li>
+                                    <a href="" class="button n01 btn-3 bg-white">
+                                        <span class="label">AKSES DEMO</span>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
+                </div>
+            </section>
 
-                
+            <!-- Section 2 -->
+            <div id="container-2" class=" style5 container default full screen bg-grey section-padding">
+                <div class="wrapper">
+                    <div class="inner">
+                        <h2 class="heading style12" style="margin-bottom: 20px;">
+                            <span class="p">Apakah Anda mengalami permasalahan ini?</span>
+                        </h2>
+                        <div id="point" class="style11">
+                            <ul>
+                                <li>
+                                    <span>⛔</span>
+                                    <p>Pendaftaran jamaah masih serba manual</p>
+                                </li>
+                                <li>
+                                    <span>⛔</span>
+                                    <p>Data jamaah tidak tersimpan dengan baik</p>
+                                </li>
+                                <li>
+                                    <span>⛔</span>
+                                    <p>Pembayaran transaksi harus dicek satu per satu</p>
+                                </li>
+                                <li>
+                                    <span>⛔</span>
+                                    <p>Pemberangkatan tak terorganisir dengan rapi</p>
+                                </li>
+                                <li>
+                                    <span>⛔</span>
+                                    <p>Kesulitan mengelola barang di banyak gudang</p>
+                                </li>
+                                <li>
+                                    <span>⛔</span>
+                                    <p>Laporan keuangan perusahaan tidak akurat</p>
+                                </li>
+                                <li>
+                                    <span>⛔</span>
+                                    <p>Tidak tahu bisnis untung atau rugi</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <!-- Section 3 -->
+            <div id="container-3" class="style5 container default full screen bg-white section-padding">
+                <div class="wrapper">
+                    <div class="inner">
+                        <div class="container">
+                            <h3 class="style12 medium-style mb10">Jika Anda mengalami semuanya, Anda sudah berada di halaman yang tepat!</h3>
+                            <h3 class="style12 medium-style mb10">Kebanyakan pebisnis travel umrah merasa tidak butuh digitalisasi, namun nyatanya transformas digital bisa mengubah bisnis Anda menjadi lebih maju</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-                    <!-- Section 4 -->
-                    <div id="container17" style="margin-top: 0; margin-bottom: 0;" class="container default full screen padding-50 bottom-zero">
-                        <div class="wrapper">
-                            <div class="inner">
-                                <h2 id="heading" class="style12" style="opacity: 1;  margin-bottom: 30px;">
-                                    <span class="p">Dilengkapi fitur canggih
-                                        <br>
-                                         siap pakai nih! 
-                                        
-                                    </span>
-                                </h2>
+            <!-- Section 4 -->
+            <div id="container-4" class="style5 container default full screen bg-primary section-padding">
+                <div class="wrapper">
+                    <div class="inner">
+                        <div class="container">
+                            <h3 class="style12 text-white medium-style mb10">Jika Anda sudah mulai pusing mengelola travel umrah & haji secara manual pakai Excel, yuk segera hijrah ke Erahajj!</h3>
+                            <h3 class="style12 text-white medium-style mb10">Sudah nggak zaman lagi data Anda terpisah-pisah di banyak device</h3>
+                            <h3 class="style12 text-white medium-style mb10">Semua kebutuhan operasional travel umrah & haji Anda mulai dari transaksi hingga laporan keuangan bisa diakses cukup dalam satu sistem saja!</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-                                <div class="mockup-component">
-                                    <div class="row d-flex">
-
-
-                                        <div class="col-md-6 col-sm-6 col-xs-12">
-                                            <div class="mockup-card" href="">
-                                                <div class="mockup-image">
-                                                    <img src="./images/rincian-pesanan.png" alt="">
+            <!-- Section 5 -->
+            <div id="container-5" class="style5 container default full screen bg-grey section-padding">
+                <div class="wrapper">
+                    <div class="inner">
+                        <div class="container">
+                            <h2 class="style12 text-black" style="margin-bottom: 20px !important;">Fitur Unggulan Erahajj</h2>
+                            <div class="icon-component">
+                                <div class="row ">
+                                    <div class="col-md-3 col-sm-6 col-xs-12">
+                                        <div class="box-icon">
+                                            <div class="icon-side">
+                                                <div class="icon-image">
+                                                    <img src="./images/check-white.png" alt="">
                                                 </div>
-
-                                                <h2 class="mockup-title">Rincian Pesanan</h2>
-                                                <div class="mockup-text">
-                                                   
-                                                   <a href="https://www.youtube.com/watch?v=n9yMm9XtY8E&list=PLTbJcBMx6lnPdIwvCIbORtTGfmcumrRwn&index=2" style="text-decoration: none;">
-                                                        <h2>
-                                                            <span style="color: var(--black-text)">Lihat Demo</span>
-                                                        </h2>
-                                                    </a>
+                                                <div class="icon-text">
+                                                    <div class="icon-title">Akuntansi & Keuangan</div>
                                                 </div>
                                             </div>
                                         </div>
-                                        
-
-                                        <div class="col-md-6 col-sm-6 col-xs-12">
-                                            <div class="mockup-card">
-                                                <div class="mockup-image">
-                                                    <img src="./images/invoice-otomatis.png" alt="">
+                                    </div>
+                                    <div class="col-md-3 col-sm-6 col-xs-12">
+                                        <div class="box-icon">
+                                            <div class="icon-side">
+                                                <div class="icon-image">
+                                                    <img src="./images/check-white.png" alt="">
                                                 </div>
-                                                <h2 class="mockup-title">Invoice Otomatis</h2>
-                                                <div class="mockup-text">
-                                                   
-                                                   <a href="https://www.youtube.com/watch?v=3LbilbD5GsE&list=PLTbJcBMx6lnPdIwvCIbORtTGfmcumrRwn&index=3" style="text-decoration: none;">
-                                                        <h2>
-                                                            <span style="color: var(--black-text)">Lihat Demo</span>
-                                                        </h2>
-                                                    </a>
+                                                <div class="icon-text">
+                                                    <div class="icon-title">Manajemen Inventory</div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-6 col-sm-6 col-xs-12">
-                                            <div class="mockup-card">
-                                                <div class="mockup-image">
-                                                    <img src="./images/rekap-keuangan.png" alt="">
+                                    </div>
+                                    <div class="col-md-3 col-sm-6 col-xs-12">
+                                        <div class="box-icon">
+                                            <div class="icon-side">
+                                                <div class="icon-image">
+                                                    <img src="./images/check-white.png" alt="">
                                                 </div>
-                                                <h2 class="mockup-title">Rekap Laba Rugi</h2>
-                                                <div class="mockup-text">
-                                                   
-                                                   <a href="https://www.youtube.com/watch?v=DZhqRgroE0w&list=PLTbJcBMx6lnPdIwvCIbORtTGfmcumrRwn&index=4" style="text-decoration: none;">
-                                                        <h2>
-                                                            <span style="color: var(--black-text)">Lihat Demo</span>
-                                                        </h2>
-                                                    </a>
+                                                <div class="icon-text">
+                                                    <div class="icon-title">Manajemen Pelanggan (CRM)</div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-6 col-sm-6 col-xs-12">
-                                            <div class="mockup-card">
-                                                <div class="mockup-image">
-                                                    <img src="./images/laporan-keuangan.png" alt="">
+                                    </div>
+                                    <div class="col-md-3 col-sm-6 col-xs-12">
+                                        <div class="box-icon">
+                                            <div class="icon-side">
+                                                <div class="icon-image">
+                                                    <img src="./images/check-white.png" alt="">
                                                 </div>
-                                                <h2 class="mockup-title">Laporan Keuangan</h2>
-                                                <div class="mockup-text">
-                                                   
-                                                   <a href="https://www.youtube.com/watch?v=yvK0CMJFdgA&list=PLTbJcBMx6lnPdIwvCIbORtTGfmcumrRwn&index=5" style="text-decoration: none;">
-                                                        <h2>
-                                                            <span style="color: var(--black-text)">Lihat Demo</span>
-                                                        </h2>
-                                                    </a>
+                                                <div class="icon-text">
+                                                    <div class="icon-title">Manajemen HRIS</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6 col-xs-12">
+                                        <div class="box-icon">
+                                            <div class="icon-side">
+                                                <div class="icon-image">
+                                                    <img src="./images/check-white.png" alt="">
+                                                </div>
+                                                <div class="icon-text">
+                                                    <div class="icon-title">Terlengkap dan Terintegrasi</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6 col-xs-12">
+                                        <div class="box-icon">
+                                            <div class="icon-side">
+                                                <div class="icon-image">
+                                                    <img src="./images/check-white.png" alt="">
+                                                </div>
+                                                <div class="icon-text">
+                                                    <div class="icon-title">Manajemen Operasional</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6 col-xs-12">
+                                        <div class="box-icon">
+                                            <div class="icon-side">
+                                                <div class="icon-image">
+                                                    <img src="./images/check-white.png" alt="">
+                                                </div>
+                                                <div class="icon-text">
+                                                    <div class="icon-title">Manajemen Cabang, Agen, Sales & Komisi</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6 col-xs-12">
+                                        <div class="box-icon">
+                                            <div class="icon-side">
+                                                <div class="icon-image">
+                                                    <img src="./images/check-white.png" alt="">
+                                                </div>
+                                                <div class="icon-text">
+                                                    <div class="icon-title">Modul Transaksi Terlengkap</div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-
-                               
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
 
-                    <!-- Pricelist Section -->
-                    <div id="container17" class="container default full screen top-zero">
-                        <div class="wrapper">
-                            <div class="inner">
-                                <!-- <h2 id="heading" class="style12" style="opacity: 1; ">
-                                    <span class="p">Perkenalkan Sistem <span style="color: var(--primary-color);">AKSANA</span>
-                                        <span style="color: var(--primary-color)"></span>
-                                    </span>
-                                </h2> -->
-                               
-                               <div class="table">
-                                 <div class="pricing-table">
-                                    <div class="pt-title">
-                                      <div class="pt-title-wrap">
-                                        <div class="pt-row info">Klik panah untuk lihat detail paket</div>
-                                        <div class="pt-row">Form Rincian Pesanan</div>
-                                        <div class="pt-row">Invoice dan Kwitansi Otomatis</div>
-                                        <div class="pt-row">Rekap Laba Rugi Tiap Acara</div>
-                                        <div class="pt-row">Modul Akuntansi sesuai SAK ETAP</div>
-                                        <div class="pt-row">Aplikasi Mobile untuk Tim WO</div>
-                                        <div class="pt-row">Aplikasi Android untuk Calon Pengantin</div>
-                                        <div class="pt-row">Manajemen Persediaan Barang</div>
-                                        <div class="pt-row">Manajemen Pelanggan</div>
-                                        <div class="pt-row">Manajemen Aset</div>
-                                        <div class="pt-row">Manajemen Karyawan (HRIS)</div>
-                                        <div class="pt-row">Harga</div>
-                                      </div>
+            <!-- Section 6 -->
+            <div id="container-6" class="style5 container default full screen bg-primary section-padding" style="padding: 50px 0 70px">
+                <div class="wrapper">
+                    <div class="inner">
+                        <div class="container">
+                            <h4 class="style12 text-white" style="margin-bottom: 20px !important;">540+ Travel Umrah & Haji telah mempercayakan manajemen bisnisnya dengan Erahajj</h4>
+                            <h2 class="style12 text-white" style="margin-bottom: 20px !important;">Apa Kata Klien Kami</h2>
+                            <div class="slider">
+                                <div class="testimonials-card">
+                                    <div class="testimonials-content">
+                                        <div class="testimonials-desc">Aplikasi Erahajj WAJIB dimiliki oleh PPIU dan PIHK. Karena aplikasi ini sudah sangat mendekati proses bisnis industri Haji, Umrah bahkan Tour. Modulnya lengkap, user friendly dan terjangkau.</div>
+                                        <div class="testimonials-title">Muhammad Firman Taufik - Tibi Tour</div>
                                     </div>
-                                    <div class="pt-option">
-                                      <div class="pt-option-mobile-nav">
-                                          <a id="navBtnLeft" href="#" class="mobile-nav-btn">
-                                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                              <path d="M22.1538 11.9819H1.81972" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
-                                              <path d="M11.9863 22.1535L1.82043 11.9865L11.9863 1.81946" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
-                                            </svg>
-                                          </a>
-                                          <a id="navBtnRight" href="#" class="mobile-nav-btn">
-                                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                              <path d="M1.81934 11.9819H22.1534" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
-                                              <path d="M11.9863 22.1535L22.1522 11.9865L11.9863 1.81946" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
-                                            </svg>
-                                        </a>
-                                      </div>
-                                      <div class="pt-option-slider swiper" id="pricingTableSlider">
-                                        <div class="swiper-wrapper">
-                                          <div class="swiper-slide pt-option-item">
-                                            <div class="pt-item">
-                                              <div class="pt-item-wrap">
-                                                <div class="pt-row">AK Starter</div>
-                                                <div class="pt-row"><i class="fa fa-check" aria-hidden="true"></i></i></div>
-                                                <div class="pt-row"><i class="fa fa-check" aria-hidden="true"></i></i></div>
-                                                <div class="pt-row"><i class="fa fa-check" aria-hidden="true"></i></i></div>
-                                                <div class="pt-row"><i class="fa fa-check" aria-hidden="true"></i></i></div>
-                                                <div class="pt-row"><i class="fa fa-check" aria-hidden="true"></i></i></div>
-                                                <div class="pt-row"><i class="fa fa-check" aria-hidden="true"></i></i></div>
-                                                <div class="pt-row"><i class="fa fa-check" aria-hidden="true"></i></i></div>
-                                                <div class="pt-row">-</div>
-                                                <div class="pt-row">-</i></div>
-                                                <div class="pt-row">-</div>
-                                                <div class="pt-row price"><p>Rp389rb<span>/bulan</span></p></div>
-                                                <div class="pt-row">
-                                                  <a href="https://wa.me/6281212375467?text=6281212375467&text=Halo%2C%20saya%20ingin%20aktivasi%20sistem%20AK%20Starter.%20Bagaimana%20caranya%3F">Pesan</a>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                          <div class="swiper-slide pt-option-item">
-                                            <div class="pt-item">
-                                              <div class="pt-item-wrap">
-                                                <div class="pt-row">AK Medium</div>
-                                                <div class="pt-row"><i class="fa fa-check" aria-hidden="true"></i></i></div>
-                                                <div class="pt-row"><i class="fa fa-check" aria-hidden="true"></i></i></div>
-                                                <div class="pt-row"><i class="fa fa-check" aria-hidden="true"></i></i></div>
-                                                <div class="pt-row"><i class="fa fa-check" aria-hidden="true"></i></i></div>
-                                                <div class="pt-row"><i class="fa fa-check" aria-hidden="true"></i></i></div>
-                                                <div class="pt-row"><i class="fa fa-check" aria-hidden="true"></i></i></div>
-                                                <div class="pt-row"><i class="fa fa-check" aria-hidden="true"></i></i></div>
-                                                <div class="pt-row"><i class="fa fa-check" aria-hidden="true"></i></i></div>
-                                                <div class="pt-row">-</div>
-                                                <div class="pt-row">-</div>
-                                                <div class="pt-row price"><p>Rp689rb<span>/bulan</span></p></div>
-                                                <div class="pt-row">
-                                                    <a href="https://wa.me/6281212375467?text=6281212375467&text=Halo%2C%20saya%20ingin%20aktivasi%20sistem%20AK%20Medium.%20Bagaimana%20caranya%3F">Pesan</a>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                          <div class="swiper-slide pt-option-item">
-                                            <div class="pt-item recommend">
-                                              <div class="pt-item-wrap">
-                                                <div class="pt-row">AK Advanced</div>
-                                                <div class="pt-row"><i class="fa fa-check" aria-hidden="true"></i></i></div>
-                                                <div class="pt-row"><i class="fa fa-check" aria-hidden="true"></i></i></div>
-                                                <div class="pt-row"><i class="fa fa-check" aria-hidden="true"></i></i></div>
-                                                <div class="pt-row"><i class="fa fa-check" aria-hidden="true"></i></i></div>
-                                                <div class="pt-row"><i class="fa fa-check" aria-hidden="true"></i></i></div>
-                                                <div class="pt-row"><i class="fa fa-check" aria-hidden="true"></i></i></div>
-                                                <div class="pt-row"><i class="fa fa-check" aria-hidden="true"></i></i></div>
-                                                <div class="pt-row"><i class="fa fa-check" aria-hidden="true"></i></i></div>
-                                                <div class="pt-row"><i class="fa fa-check" aria-hidden="true"></i></i></div>
-                                                <div class="pt-row"><i class="fa fa-check" aria-hidden="true"></i></i></div>
-                                                <div class="pt-row price"><p>Rp789rb<span>/bulan</span></p></div>
-                                                <div class="pt-row last">
-                                                    <a href="https://wa.me/6281212375467?text=6281212375467&text=Halo%2C%20saya%20ingin%20aktivasi%20sistem%20AK%20Advanced.%20Bagaimana%20caranya%3F">Pesan</a>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
+                                </div>
+                                <div class="testimonials-card">
+                                    <div class="testimonials-content">
+                                        <div class="testimonials-desc">Alhamdulillah kami cukup terkesan dengan pelayanan tim Erahajj, semoga tim bisa terus mempertahankan pelayanan kepada kami. Fitur-fitur yang sangat komplit sehingga sangat membantu meningkatkan efektifitas dan efisiensi manajemen travel. Barakallahu fiikum Erahajj dan tim semoga terus berkembang dan memberikan kebaikan bagi para pelayan tamu Allah. Aamiin</div>
+                                        <div class="testimonials-title">Abu Sena - HaramainKU</div>
                                     </div>
-                                 </div>
-                               </div>
-
-                               <div class="notes-card">
-                                <div class="notes-title">
-                                    <h2 id="heading" class="style12" style="margin-bottom: 20px; text-align: left;">
-                                        Catatan
-                                    </h2>
                                 </div>
-                                <div class="notes-point">
-                                    <ul>
-                                        <li>
-                                            <span>1.</span>
-                                            <p>Belum termasuk biaya pembelian domain .com (kisaran Rp 182rb /tahun)</p>
-                                        </li>
-                                        <li>
-                                            <span>2.</span>
-                                            <p>Periode minimal berlangganan 3 bulan</p>
-                                        </li>
-                                    </ul>
+                                <div class="testimonials-card">
+                                    <div class="testimonials-content">
+                                        <div class="testimonials-desc">Selama menggunakan Erahajj Alhamdulillah sangat membantu karena dapat digunakan kapanpun dan dimanapun. Semoga kedepannya Erahajj bisa lebih kami maksimalkan dalam membantu mengelola keuangan dan operasional Tazkiyah</div>
+                                        <div class="testimonials-title">Tazkiyah Tour</div>
+                                    </div>
                                 </div>
-                               </div>
-
-                                  <script>
-                                  // Pricing table - mobile only slider
-                                        var init = false;
-                                        var pricingCardSwiper;
-                                        var pricingLoanSwiper
-                                        function swiperCard() {
-                                        if (window.innerWidth <= 991) {
-                                            if (!init) {
-                                            init = true;
-                                            pricingCardSwiper = new Swiper("#pricingTableSlider", {
-                                                slidesPerView: "auto",
-                                                spaceBetween: 5,
-                                                grabCursor: true,
-                                                keyboard: true,
-                                                autoHeight: false,
-                                                navigation: {
-                                                nextEl: "#navBtnRight",
-                                                prevEl: "#navBtnLeft",
-                                                },
-                                            });
-                                            }
-                                        } else if (init) {
-                                            pricingCardSwiper.destroy();
-                                            init = false;
-                                        }
-                                        }
-                                        swiperCard();
-                                        window.addEventListener("resize", swiperCard);
-                                  </script>
+                                <div class="testimonials-card">
+                                    <div class="testimonials-content">
+                                        <div class="testimonials-desc">Erahajj ini merupakan sebuah platform All in One yang paling sesuai untuk bisnis travel khususnya Umroh dan Haji. Karena semua fitur yang berkaitan dengan administrasi untuk keberangkatan jamaah sudah tersedia</div>
+                                        <div class="testimonials-title">Abu Yusuf - Uhud Tour</div>
+                                    </div>
+                                </div>
+                                <div class="testimonials-card">
+                                    <div class="testimonials-content">
+                                        <div class="testimonials-desc">Alhamdulillah dengan aplikasi Erahajj, sangat membantu proses administrasi dan segala hal yang berhubungan dengan manajemen travel.</div>
+                                        <div class="testimonials-title">HERIYANTO TOLIB SUANDI - Thalieb Tour</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
 
+            <!-- Section 7 -->
+            <div id="container-7" class="style5 container default full screen bg-white section-padding">
+                <div class="wrapper">
+                    <div class="inner">
+                        <div class="container">
+                            <h2 class="style12 text-black" style="margin-bottom: 40px !important;">Simak Video Sistem <span class="primary">Erahajj</span></h2>
+                            <div class="youtube">
+                                <iframe src="https://www.youtube.com/embed/l7T1YXZm1BI?si=_ZZdZOWQDvXmVCO3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-                    <div id="container17" class="style5 container default full screen bg-grey">
-                        <div class="wrapper">
+            <!-- Section 8 -->
+            <div id="container-8" class="style5 container default full screen bg-primary section-padding">
+                <div class="wrapper">
+                    <div class="inner">
+                        <div class="container">
+                            <h2 class="style12 text-white" style="margin-bottom: 20px !important;">Tak Perlu Bayar Banyak Sistem Terpisah</h2>
+                            <h3 class="style12 medium-style text-white">Jika Anda mengalami semuanya, Anda sudah berada di halaman yang tepat!</h3>
                             <div class="inner">
-                                <h2 id="heading" class="style12" style="opacity: 1; ">
-                                    <span class="p">DAPATKAN HARGA TERBAIK <span class="hightlight" style="background-color: var(--primary-color);">AKSANA</span>
-                                        <span style="color: var(--primary-color)"></span>
-                                    </span>
-                                </h2>
-                                
-                                <h2 class="heading title">Ketika Anda menggunakan sistem lain, maka Anda harus membayar </h2>
-                                <div id="point" class="style11 bold" style="font-size: x-large; color: #333;">
-                                   <ul>
-                                    <li>
-                                       <span>✅</span>
-                                       <p>Sistem Akuntansi : <span class="hightlight">399,000/bulan</span></p>
-                                    </li>
-                                    <li>
-                                        <span>✅</span>
-                                        <p>Sistem HRIS : <span class="hightlight">499,000/bulan</span></p>
-                                     </li>
-                                    <li>
-                                        <span>✅</span>
-                                        <p>Sistem CRM : <span class="hightlight"> 249,000/bulan</span></p>
-                                     </li>
-                                   </ul> 
-                                  
-                                </div>
-
-                                <h2 id="heading" class="style12 price" style="opacity: 1; ">
-                                    <span>Total</span>
-                                    <br>
-                                    <span class="pricing">Rp 1,147,000/bulan</span>     
-                                    <br>                              
-                                    <span>🤯 😰 😱</span>
-                                </h2>  
-                                <p class="price-paragraph">Udah mahal, sistemnya beda-beda, datanya jadi terpisah 🤔</p>
-
-                                <p class="price-paragraph">Belum lagi tidak ada fitur khusus untuk wedding organizer
-                                    <br>
-                                    <br>
-                                    Karena sistem lain dikembangkan untuk berbagai jenis usaha
-                                </p>
-                                <p class="price-paragraph"> Pakai Aksana bisa dapetin semua
-                                </p>
                                 <div class="price-top">Mulai dari </div>
-                                 
-                                <div class="arrow" style="margin-bottom: 10px; margin-top: 10px;">
-                                    <img style="max-width: 22px; " src="./images/arrow1.png" alt="">
-                                    <img style="max-width: 22px;" src="./images/arrow1.png" alt="">
-                                    <img style="max-width: 22px; " src="./images/arrow1.png" alt="">
-                                </div>
-
-                                <div class="price-tag">
-                                   Rp 389<span>ribu/bulan </span><span style="color: var(--black-color);">aja</span></div>
-                                </div>
-                                 
-                          
-                        </div>
-                    </div>
-
-                    <ul id="buttons" class="style4 buttons">
-                                    <li>
-                                        <a href="https://wa.me/6281212375467?text=Halo%2C%20saya%20tertarik%20untuk%20menggunakan%20Aksana.%0D%0ASaya%20dari%20vendor%20%3A%20%0D%0AKota%20%3A%20%0D%0A%0D%0ABagaimana%20caranya%3F" class="button n01">
-                                           
-                                           <span class="label">Saya Mau Sistem AKSANA</span>
-                                           <i class="fa fa-phone" aria-hidden="true"></i>
-                                        </a>
-                                    </li>
-                    </ul>
-
-
-
-                    <!-- Guarantee Section -->
-                    <div id="container17" class="container default full screen padding-50 bg-dark">
-                        <div class="wrapper">
-                            <div class="inner">
-                                <h2 id="heading" class="style12" style="opacity: 1;  margin-bottom: 40px; color: var(--primary-color);">
-                                    <span class="p">Garansi Sistem
-                                        
-                                    </span>
-                                </h2>
-                                <div id="point" class="style11" style="font-size: x-large; color: white; width: 80%; margin: 0 auto; line-height: 1.6;">
-                                    <p>Kami memberikan garansi life time untuk segala jenis kesalahan pada sistem yang disebabkan oleh kesalahan pada internal program kami atau server Aksana. 
-                                        <br>
-                                        <br>
-                                        Termasuk didalamnya apabila terdapat kesalahan dalam kalkulasi atau tampilan data, inkonsistensi data, dan berbagai kesalahan teknis dari program lainnya.
-                                        <br>
-                                        <br>
-                                        Garansi tidak berlaku untuk kesalahan yang disebabkan oleh faktor human error, seperti kesalahan pada entri data, pengubahan data, maupun penghapusan data.
-                                        
-                                        </p>
-                                </div>
-
-
-                               
+                                <div class="price-tag">Rp775.000<span>/bulan!</span></div>
                             </div>
                         </div>
                     </div>
-                    
-                    <!-- FAQ Section -->
-                    <div id="container17" class="container default full screen padding-50">
-                        <div class="wrapper">
-                            <div class="inner">
-                                <h2 id="heading" class="style12" style="opacity: 1;  margin-bottom: 40px;">
-                                    <span class="p">Frequently Asked Question
-                                        <span style="color: var(--primary-color)"></span>
-                                    </span>
-                                </h2>
-                                <div id="faq-content">
-                                    <div class="card">
-                                      <a class="card-link" id="click" aria-expanded="false">
-                                        <span class="expanded"><i class="fa fa-plus"></i></span>
-                                        <span class="collapsed"><i class="fa fa-minus"></i></span>
-                                        Apa itu Aksana?
-                                      </a>
-                                      <div class="hide-class">
-                                        <div class="card-body">
-                                            Aksana adalah sistem manajemen khusus untuk wedding organizer yang memudahkan manajemen keuangan, administrasi dan operasional
+                </div>
+            </div>
+
+            <!-- Section 9 -->
+            <div id="container-paket" class="style5 container default full screen bg-white section-padding">
+                <div class="wrapper">
+                    <div class="inner">
+                        <div class="container">
+                            <h4 class="style12 text-black" style="margin-bottom: 20px !important;">Erahajj menawarkan layanan dengan sistem berlangganan secara lengkap dengan seluruh modul transaksinya. Sistem ini menggunakan teknologi Software as a Service, yang memudahkan Anda dalam mengelola berbagai kebutuhan perusahaan travel Anda dengan fasilitas maksimal dan harga yang lebih terjangkau. Seluruh sistem menggunakan nama dan identitas dari travel Anda, tidak ada nama Erahajj sama sekali didalamnya.</h4>
+                            <ul class="buttons style4 mt10" style="margin-top: 40px">
+                                <li>
+                                    <a href="" class="button bg-primary n01 btn-3 bg-white">
+                                        <span class="label text-white">Saya Mau Sistem Erahajj</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="harga-paket">
+                                <div class="row">
+                                    <div class="list-paket-layanan col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                                        <div class="paket-layanan-inner">
+                                            <h3 id="nama-paket-1" class="panel-title">
+                                                <span class="item-title">EH Starter</span>
+                                            </h3>
+                                            <div class="display-harga">
+                                                <div class="harga-formatted">
+                                                    <span class="harga">775</span>
+                                                    <span class="ribuan"><i>000</i><i>/Bulan</i></span>
+                                                </div>
+                                            </div>
+                                            <div class="panel-komponen">
+                                                <div class="panel-harga-item">
+                                                    1.625 User &amp; Transaksi <a onclick="displayInformasi('swxcgvzhsixjiimqgpwb')" class="fa fa-info-circle"></a>
+                                                </div>
+                                            </div>
+                                            <a href="https://erahajj.co.id/order/checkout/eh-starter/54fa97ab525157cf967723919844eb5a7c02aeff" class="btn btn-primary btn-block" data-original-title="" title="">Pesan Sekarang</a>
                                         </div>
-                                      </div>
-                                    </div>
-                        
-                                    <div class="card">
-                                      <a class="card-link" id="click" aria-expanded="false">
-                                        <span class="expanded"><i class="fa fa-plus"></i></span>
-                                        <span class="collapsed"><i class="fa fa-minus"></i></span>
-                                        Apakah ada Lihat demo atau trial sistem?
-                                      </a>
-                                      <div class="hide-class">
-                                        <div class="card-body">
-                                            Untuk video lihat demo sistem bisa dicek melalui : <a href="https://aksn.link/Z7XXy"><strong>https://aksn.link/Z7XXy</strong></a>
-                                            <br>
-                                            <br>
-                                            Untuk trial sistem Aksana gratis selama 2 minggu melalui : <a href="https://aksana.co.id/trial
-                                            "><strong>https://aksana.co.id/trial</strong>
-                                        </a>
+
+                                        <div id="dxlxlntjadqgxgcrcrjk" title="Informasi Penyimpanan EH Starter" class="hidden">
+                                            <p>Paket EH Starter menyediakan penyimpanan file hingga kapasitas 2 GB. Adapun contoh file diantaranya sebagai berikut : </p>
+                                            <ul class="ul-fasilitas mb10">
+                                                <li>File dokumen administasi (foto/scan KTP, foto/scan KK, dsb)</li>
+                                                <li>File bukti pembayaran transaksi</li>
+                                                <li>File gambar galeri paket</li>
+                                                <li>Dan lain sejenisnya</li>
+                                            </ul>
+                                            <p>Seluruh file yang diupload ke sistem Erahajj akan dikompres tanpa mengurangi kualitas aslinya, sehingga memungkinkan travel Anda untuk menyimpan ratusan hingga ribuan file dalam sistem</p>
                                         </div>
-                                      </div>
-                                    </div>
-                        
-                                    <div class="card">
-                                      <a class="card-link" id="click" aria-expanded="false">
-                                        <span class="expanded"><i class="fa fa-plus"></i></span>
-                                        <span class="collapsed"><i class="fa fa-minus"></i></span>
-                                        Apakah ada tutorial atau training penggunaan sistem Aksana?
-                                      </a>
-                                      <div class="hide-class">
-                                        <div class="card-body">
-                                            Ya, kami menyediakan training melalui zoom meeting untuk cara penggunaan sistem Aksana.
-                                            <br>
-                                            <br>
-                                            Kami juga menyediakan tutorial penggunaan sistem berupa teks maupun video.
-                                            
+                                        <div id="swxcgvzhsixjiimqgpwb" title="Informasi User &amp; Transaksi EH Starter" class="hidden">
+                                            <p>Kapasitas user &amp; transaksi yang disediakan dalam paket EH Starter adalah sebanyak 1.625. Artinya, paket EH Starter dapat menyimpan hingga 1.625 data transaksi, dan 1.625 data user</p>
+                                            <p>Data transaksi adalah transaksi seperti transaksi : umrah, haji, wisata, visa, hotel, land arrangement, dan lain sebagainya. Adapun data user adalah data : operator, agen, sales, dan jamaah yang tersimpan di sistem</p>
+                                            <p>Sebagai contoh, terdapat satu transaksi umrah dengan pemesan keluarga sejumlah 5 orang, maka dihitung sebagai : 1 transaksi dan 5 user (jamaah)</p>
+                                            <p>Data yang dihitung merupakan keseluruhan data yang tersimpan di sistem, bukan data secara periodik (bulanan, tahunan)</p>
                                         </div>
-                                      </div>
                                     </div>
-                                    <div class="card">
-                                      <a class="card-link" id="click" aria-expanded="false">
-                                        <span class="expanded"><i class="fa fa-plus"></i></span>
-                                        <span class="collapsed"><i class="fa fa-minus"></i></span>
-                                        Bagaimana keamanan data saya?
-                                      </a>
-                                      <div class="hide-class">
-                                        <div class="card-body">
-                                            Data Anda tersimpan dengan aman di server kami. Kami menggunakan sistem backup data secara berkala setiap jam, terenkripsi, dan terdistribusi ke beberapa data penyimpanan kami yang terpisah, sehingga dapat meminimalisir terjadinya hal-hal yang tidak diinginkan apabila terjadi kesalahan pada program atau server.
-                                            <br>
-                                            <br>
-                                            Kami menjamin tidak memperjual belikan data Anda kepada pihak manapun dengan alasan apapun, karena privasi dan keamanan data perusahaan Anda adalah prioritas kami.
-                                            
+                                    <div class="list-paket-layanan col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                                        <div class="paket-layanan-inner">
+                                            <h3 id="nama-paket-2" class="panel-title">
+                                                <span class="item-title">EH Small</span>
+                                            </h3>
+                                            <div class="display-harga">
+                                                <div class="harga-formatted">
+                                                    <span class="harga">925</span>
+                                                    <span class="ribuan"><i>000</i><i>/Bulan</i></span>
+                                                </div>
+                                            </div>
+                                            <div class="panel-komponen">
+                                                <div class="panel-harga-item">
+                                                    3.625 User &amp; Transaksi <a onclick="displayInformasi('ijwsxmoodtfaqtyqffsa')" class="fa fa-info-circle"></a>
+                                                </div>
+                                            </div>
+                                            <a href="https://erahajj.co.id/order/checkout/eh-small/dc4ec2246192d32a7c803ff3d6c82e65aff8098d" class="btn btn-primary btn-block" data-original-title="" title="">Pesan Sekarang</a>
                                         </div>
-                                      </div>
-                                    </div>
-                                    <div class="card">
-                                      <a class="card-link" id="click" aria-expanded="false">
-                                        <span class="expanded"><i class="fa fa-plus"></i></span>
-                                        <span class="collapsed"><i class="fa fa-minus"></i></span>
-                                        Apakah saya bisa upgrade atau downgrade paket sewaktu-waktu?
-                                      </a>
-                                      <div class="hide-class">
-                                        <div class="card-body">
-                                            Tentu. Kami akan menghitung ulang sisa pembayaran sesuai dengan sisa waktu berlangganan dan selisih harga paket yang sedang digunakan ke paket yang akan diambil nantinya.
+
+                                        <div id="tvywwemptdavexqcvsbh" title="Informasi Penyimpanan EH Small" class="hidden">
+                                            <p>Paket EH Small menyediakan penyimpanan file hingga kapasitas 6 GB. Adapun contoh file diantaranya sebagai berikut : </p>
+                                            <ul class="ul-fasilitas mb10">
+                                                <li>File dokumen administasi (foto/scan KTP, foto/scan KK, dsb)</li>
+                                                <li>File bukti pembayaran transaksi</li>
+                                                <li>File gambar galeri paket</li>
+                                                <li>Dan lain sejenisnya</li>
+                                            </ul>
+                                            <p>Seluruh file yang diupload ke sistem Erahajj akan dikompres tanpa mengurangi kualitas aslinya, sehingga memungkinkan travel Anda untuk menyimpan ratusan hingga ribuan file dalam sistem</p>
                                         </div>
-                                      </div>
-                                    </div>
-                                    <div class="card">
-                                      <a class="card-link" id="click" aria-expanded="false">
-                                        <span class="expanded"><i class="fa fa-plus"></i></span>
-                                        <span class="collapsed"><i class="fa fa-minus"></i></span>
-                                        Apa yang terjadi jika saya putus berlangganan?
-                                      </a>
-                                      <div class="hide-class">
-                                        <div class="card-body">
-                                            Anda tidak bisa mengakses ke dalam sistem lagi jika putus berlangganan.
-            
-                                            Anda bisa download data laporan maupun transaksi dalam bentuk file excel sebelum putus berlangganan, sehingga Anda masih memiliki arsip data untuk digunakan kedepannya.
-                                            
+                                        <div id="ijwsxmoodtfaqtyqffsa" title="Informasi User &amp; Transaksi EH Small" class="hidden">
+                                            <p>Kapasitas user &amp; transaksi yang disediakan dalam paket EH Small adalah sebanyak 3.625. Artinya, paket EH Small dapat menyimpan hingga 3.625 data transaksi, dan 3.625 data user</p>
+                                            <p>Data transaksi adalah transaksi seperti transaksi : umrah, haji, wisata, visa, hotel, land arrangement, dan lain sebagainya. Adapun data user adalah data : operator, agen, sales, dan jamaah yang tersimpan di sistem</p>
+                                            <p>Sebagai contoh, terdapat satu transaksi umrah dengan pemesan keluarga sejumlah 5 orang, maka dihitung sebagai : 1 transaksi dan 5 user (jamaah)</p>
+                                            <p>Data yang dihitung merupakan keseluruhan data yang tersimpan di sistem, bukan data secara periodik (bulanan, tahunan)</p>
                                         </div>
-                                      </div>
                                     </div>
-                                  
-                                  </div>
-                               
+                                    <div class="list-paket-layanan col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                                        <div class="paket-layanan-inner">
+                                            <h3 id="nama-paket-3" class="panel-title">
+                                                <span class="item-title">EH Medium</span>
+                                            </h3>
+                                            <div class="display-harga">
+                                                <div class="harga-formatted">
+                                                    <span class="harga">1.075</span>
+                                                    <span class="ribuan"><i>000</i><i>/Bulan</i></span>
+                                                </div>
+                                            </div>
+                                            <div class="panel-komponen">
+                                                <div class="panel-harga-item">
+                                                    5.625 User &amp; Transaksi <a onclick="displayInformasi('yvsfrkspriswdxpqmyob')" class="fa fa-info-circle"></a>
+                                                </div>
+                                            </div>
+                                            <a href="https://erahajj.co.id/order/checkout/eh-medium/47e81fccb6a17661d5044b0f1c8666ceddad7a27" class="btn btn-primary btn-block" data-original-title="" title="">Pesan Sekarang</a>
+                                        </div>
+
+                                        <div id="jzclefwkwmwbmvnyujov" title="Informasi Penyimpanan EH Medium" class="hidden">
+                                            <p>Paket EH Medium menyediakan penyimpanan file hingga kapasitas 10 GB. Adapun contoh file diantaranya sebagai berikut : </p>
+                                            <ul class="ul-fasilitas mb10">
+                                                <li>File dokumen administasi (foto/scan KTP, foto/scan KK, dsb)</li>
+                                                <li>File bukti pembayaran transaksi</li>
+                                                <li>File gambar galeri paket</li>
+                                                <li>Dan lain sejenisnya</li>
+                                            </ul>
+                                            <p>Seluruh file yang diupload ke sistem Erahajj akan dikompres tanpa mengurangi kualitas aslinya, sehingga memungkinkan travel Anda untuk menyimpan ratusan hingga ribuan file dalam sistem</p>
+                                        </div>
+                                        <div id="yvsfrkspriswdxpqmyob" title="Informasi User &amp; Transaksi EH Medium" class="hidden">
+                                            <p>Kapasitas user &amp; transaksi yang disediakan dalam paket EH Medium adalah sebanyak 5.625. Artinya, paket EH Medium dapat menyimpan hingga 5.625 data transaksi, dan 5.625 data user</p>
+                                            <p>Data transaksi adalah transaksi seperti transaksi : umrah, haji, wisata, visa, hotel, land arrangement, dan lain sebagainya. Adapun data user adalah data : operator, agen, sales, dan jamaah yang tersimpan di sistem</p>
+                                            <p>Sebagai contoh, terdapat satu transaksi umrah dengan pemesan keluarga sejumlah 5 orang, maka dihitung sebagai : 1 transaksi dan 5 user (jamaah)</p>
+                                            <p>Data yang dihitung merupakan keseluruhan data yang tersimpan di sistem, bukan data secara periodik (bulanan, tahunan)</p>
+                                        </div>
+                                    </div>
+                                    <div class="list-paket-layanan col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                                        <div class="paket-layanan-inner">
+                                            <h3 id="nama-paket-4" class="panel-title">
+                                                <span class="item-title">EH Unlimited</span>
+                                            </h3>
+                                            <div class="display-harga">
+                                                <div class="harga-formatted">
+                                                    <span class="harga">2.050</span>
+                                                    <span class="ribuan"><i>000</i><i>/Bulan</i></span>
+                                                </div>
+                                            </div>
+                                            <div class="panel-komponen">
+                                                <div class="panel-harga-item">
+                                                    ∞ User &amp; Transaksi <a onclick="displayInformasi('rrszjoqsdsiymfwwijxb')" class="fa fa-info-circle"></a>
+                                                </div>
+                                            </div>
+                                            <a href="https://erahajj.co.id/order/checkout/eh-unlimited/93b70c9cdd0b3e9389a92224956a1b3f70a55c27" class="btn btn-primary btn-block" data-original-title="" title="">Pesan Sekarang</a>
+                                        </div>
+
+                                        <div id="lxrgbncbpscfluzeeuvo" title="Informasi Penyimpanan EH Unlimited" class="hidden">
+                                            <p>Paket EH Unlimited menyediakan penyimpanan file hingga kapasitas 50 GB. Adapun contoh file diantaranya sebagai berikut : </p>
+                                            <ul class="ul-fasilitas mb10">
+                                                <li>File dokumen administasi (foto/scan KTP, foto/scan KK, dsb)</li>
+                                                <li>File bukti pembayaran transaksi</li>
+                                                <li>File gambar galeri paket</li>
+                                                <li>Dan lain sejenisnya</li>
+                                            </ul>
+                                            <p>Seluruh file yang diupload ke sistem Erahajj akan dikompres tanpa mengurangi kualitas aslinya, sehingga memungkinkan travel Anda untuk menyimpan ratusan hingga ribuan file dalam sistem</p>
+                                        </div>
+                                        <div id="rrszjoqsdsiymfwwijxb" title="Informasi User &amp; Transaksi EH Unlimited" class="hidden">
+                                            <p>Kapasitas user &amp; transaksi yang disediakan dalam paket EH Unlimited adalah sebanyak ∞. Artinya, paket EH Unlimited dapat menyimpan hingga ∞ data transaksi, dan ∞ data user</p>
+                                            <p>Data transaksi adalah transaksi seperti transaksi : umrah, haji, wisata, visa, hotel, land arrangement, dan lain sebagainya. Adapun data user adalah data : operator, agen, sales, dan jamaah yang tersimpan di sistem</p>
+                                            <p>Sebagai contoh, terdapat satu transaksi umrah dengan pemesan keluarga sejumlah 5 orang, maka dihitung sebagai : 1 transaksi dan 5 user (jamaah)</p>
+                                            <p>Data yang dihitung merupakan keseluruhan data yang tersimpan di sistem, bukan data secara periodik (bulanan, tahunan)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="site-order-catatan">
+                                <div>Catatan : </div>
+                                <ol>
+                                    <li>Harga belum termasuk biaya registrasi yang dibayarkan hanya satu kali di awal pada pendaftaran sejumlah IDR 1.250.000,00</li>
+                                    <li>Harga belum termasuk pembelian maupun perpanjangan domain yang digunakan oleh perusahaan</li>
+                                    <li>Harga sudah termasuk seluruh modul transaksi dan operasional perusahaan seperti : Aplikasi Mobile, Accounting, Inventory, HRIS, CRM, dan TGS</li>
+                                    <li>Informasi selengkapnya dapat dilihat pada halaman : <a target="_blank" href="https://erahajj.co.id/halaman/syarat-ketentuan">Syarat &amp; Ketentuan</a></li>
+                                </ol>
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
 
-                </section>  
+            <!-- Section 10 -->
+            <div id="container-catatan" class="style5 container default full screen section-padding">
+                <div class="wrapper">
+                    <div class="inner">
+                        <div class="container">
+                            <div class="catatan">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 10 -->
+            <div id="container-10" class="style5 container default full screen bg-white section-padding">
+                <div class="wrapper">
+                    <div class="inner">
+                        <div class="container">
+                            <h2 class="style12 text-black" style="margin-bottom: 40px !important;">Frequently Asked Question</h2>
+                            <div id="faq-content">
+                                <div class="card">
+                                    <a class="card-link" aria-expanded="false">
+                                        <span class="expanded"><i class="fa fa-plus"></i></span>
+                                        <span class="collapsed"><i class="fa fa-minus"></i></span>
+                                        Apa itu Erahajj?</a>
+                                    <div class="hide-class">
+                                        <div class="card-body">
+                                            Erahajj adalah sistem manajemen travel umrah & haji terbaik dan terlengkap di dunia. Erahajj merupakan satu sistem dengan berbagai solusi yang dikembangkan khusus untuk memaksimalkan performa travel umrah & haji Anda.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <a class="card-link" aria-expanded="false">
+                                        <span class="expanded"><i class="fa fa-plus"></i></span>
+                                        <span class="collapsed"><i class="fa fa-minus"></i></span>Apakah ada Demo & Trial?</a>
+                                    <div class="hide-class">
+                                        <div class="card-body">
+                                            <span>Ya, tentu saja!</span>
+                                            <br>
+                                            <span>Akses Demo di <a href="https://demo.erahajj.co.id/" style="color: var(--primary-color)">di sini</a></span>
+                                            <br>
+                                            <span>Akses Trial 7 Hari di <a href="https://erahajj.co.id/trial" style="color: var(--primary-color)">di sini</a></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <a class="card-link" aria-expanded="false">
+                                        <span class="expanded"><i class="fa fa-plus"></i></span>
+                                        <span class="collapsed"><i class="fa fa-minus"></i></span>
+                                        Apakah ada tutorial penggunaan sistem?
+                                    </a>
+                                    <div class="hide-class">
+                                        <div class="card-body">
+                                            <h5>Erahajj menyediakan media pembelajaran untuk implementasi sistem yaitu :</h5>
+                                            <ul class="training-list">
+                                                <li>
+                                                    <div class="eh-training-title">Erahajj Learning Management System</div>
+                                                    <div class="eh-training-desc">E-Learning berupa video dan panduan tertulis yang terdapat di masing-masing sistem Anda</div>
+                                                </li>
+                                                <li>
+                                                    <div class="eh-training-title">Erahajj Training Center</div>
+                                                    <div class="eh-training-desc">Pelatihan penggunaan sistem secara offline &amp; online (hybrid) secara langsung dan gratis. Training offline berlokasi di kantor Erahajj, dan online melalui melalui Zoom atau Google Meet</div>
+                                                </li>
+                                                <li>
+                                                    <div class="eh-training-title">Training Online Eksklusif</div>
+                                                    <div class="eh-training-desc">Pelatihan penggunaan sistem secara eksklusif melalui Zoom atau Google Meet</div>
+                                                </li>
+                                                <li>
+                                                    <div class="eh-training-title">Training Onsite Eksklusif</div>
+                                                    <div class="eh-training-desc">Pelatihan penggunaan sistem secara eksklusif langsung di kantor Anda</div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <a class="card-link" aria-expanded="false">
+                                        <span class="expanded"><i class="fa fa-plus"></i></span>
+                                        <span class="collapsed"><i class="fa fa-minus"></i></span>
+                                        Apakah saya bisa upgrade & downgrade paket sewaktu-waktu?</a>
+                                    <div class="hide-class">
+                                        <div class="card-body">
+                                            Tentu. Kami akan menghitung ulang sisa pembayaran sesuai dengan sisa waktu berlangganan dan selisih harga paket yang sedang digunakan ke paket yang akan diambil nantinya.</div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <a class="card-link" aria-expanded="false">
+                                        <span class="expanded"><i class="fa fa-plus"></i></span>
+                                        <span class="collapsed"><i class="fa fa-minus"></i></span>
+                                        Apakah saya bisa migrasi data dari sistem lain?</a>
+                                    <div class="hide-class">
+                                        <div class="card-body">
+                                            Bisa. Anda bisa konsultasi terlebih dahulu dengan Travel System Consultant kami untuk proses migrasi data tersebut.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <a class="card-link" aria-expanded="false">
+                                        <span class="expanded"><i class="fa fa-plus"></i></span>
+                                        <span class="collapsed"><i class="fa fa-minus"></i></span>
+                                        Bagaimana jika saya tidak lagi berlangganan Erahajj?</a>
+                                    <div class="hide-class">
+                                        <div class="card-body">
+                                            Anda tidak bisa mengakses ke dalam sistem lagi jika sudah tidak berlangganan. Anda bisa download data laporan maupun transaksi dalam bentuk file excel sebelum putus berlangganan, sehingga Anda masih memiliki arsip data untuk digunakan kedepannya.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+        </section>
+    </div>
+
+    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="modalTitle" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitle"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="modalContent"></div>
+                <div class="modal-footer">
+                    <button type="button" id="customCloseBtn" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
             </div>
         </div>
     </div>
 
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.4/swiper-bundle.min.js"></script>
-
-    <script>
-        const items = document.querySelectorAll(".card a.card-link");
-  
-        function toggleAccordion() {
-          const itemToggle = this.getAttribute("aria-expanded");
-  
-          for (i = 0; i < items.length; i++) {
-            items[i].setAttribute("aria-expanded", "false");
-          }
-  
-          if (itemToggle == "false") {
-            this.setAttribute("aria-expanded", "true");
-          }
-        }
-  
-        items.forEach((item) => item.addEventListener("click", toggleAccordion));
-    </script>
-
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
     <script>
+        const items = document.querySelectorAll(".card a.card-link");
+        function toggleAccordion() {
+            const itemToggle = this.getAttribute("aria-expanded");
+            for (i = 0; i < items.length; i++) {
+                items[i].setAttribute("aria-expanded", "false");
+            }
+            if (itemToggle == "false") {
+                this.setAttribute("aria-expanded", "true");
+            }
+        }
+        items.forEach((item) => item.addEventListener("click", toggleAccordion));
+    </script>
+    <script>
+        function displayInformasi(selector) {
+            var element = $('#' + selector);
+            var title = $(element).attr('title');
+            var konten = $(element).html();
+            modalAlert(title, konten);
+        }
 
+        function modalAlert(title, konten) {
+            $('#modalTitle').text(title);
+            $('#modalContent').html(konten);
+            $('#myModal').modal('show');
+        }
+
+        $(document).ready(function(){
+            $('#customCloseBtn').on('click', function() {
+                $('#myModal').modal('hide');
+            });
+        });
+    </script>
+
+    <script>
+        function setEqualHeight() {
+            let maxHeight = 0;
+            $('.testimonials-content').each(function () {
+                maxHeight = Math.max(maxHeight, $(this).outerHeight());
+            });
+            $('.testimonials-content').height(maxHeight);
+        }
+
+        $(document).ready(function(){
+            setEqualHeight();
+        });
+
+    </script>
+    <script>
     $(document).ready(function(){
             $(".slider").slick({
-                slidesToShow: 3,
+                slidesToShow: 1,
                 slidesToScroll: 1,
+                adaptiveHeight: true,
                 autoplay: true,
                 autoplaySpeed: 2000,
                 responsive: [
@@ -909,15 +747,7 @@
                 ]
             });
         });
-
     </script>
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <!-- <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script> -->
-
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
-
 
     </body>
 </html>
