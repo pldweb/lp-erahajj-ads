@@ -606,7 +606,7 @@ section#container-5::before{
     h3.style12.medium-style {
         margin-bottom: 31px !important;
         line-height: 1.5;
-        padding: 0 20px;
+        padding: 0;
     }
 
     .section-padding {
@@ -633,9 +633,66 @@ section#container-5::before{
         
 }
 
-
 @media (max-width: 552px){
     #point.style11 {
         padding: 0 20px;
     }
+
+    .buttons.style4 li a {
+        letter-spacing: .15rem;
+        padding: 15px 8px;
+    }
+
+    .card-link {
+        font-size: 18px;
+    }
+
+    h3.style12.medium-style {
+        font-size: 20px;
+    }
+
+    .testimonials-content {
+        padding: 20px;
+    }
+
+    .text-big h1 span {
+        font-size: 35px;
+    }
+
+    .text-small h3 {
+        font-size: 17px;
+    }
+
+    #site-order-catatan li {
+        font-size: 18px;
+    }
+
+    #point ul li p {
+        margin-bottom: 9px;
+        top: 4px;
+    }
+
+    section#container-13 {
+        padding-bottom: 60px;
+    }
+}
+
+.buttons.style4 li a .label {
+    padding-left: 4px;
+}
+
+.buttons li a i {
+    color: var(--primary-color);
+    bottom: 1px;
+    position: relative;
+    left: 4px;
+    font-weight: 600;
+}
+
+section.container-paket .bg-white .buttons.style4 li a:hover i.fa.fa-whatsapp {
+    color: var(--primary-color);
+}
+
+section.container-paket .bg-white i.fa.fa-whatsapp {
+    color: white;
 }
